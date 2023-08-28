@@ -12,12 +12,6 @@ import java.awt.font.*;
 public class Chess extends Frame implements MouseListener, MouseMotionListener{
 	public Canvas canvas = new Canvas() {
 		public void paint(Graphics g) {
-			/*System.out.println(Font.getAllFonts());
-			Font font = Font.getFont("Serif");
-			   FontRenderContext frc = ((Graphics2D)g).getFontRenderContext();
-			   TextLayout layout = new TextLayout("RESET", font, frc);
-			   layout.draw((Graphics2D) g, 380, 850);
-			   */
 			g.setColor(new Color(170, 200, 255));
 			g.fillRect(380, 850, 150, 60);
 			for (int i = 0; i < 8; i++) {
